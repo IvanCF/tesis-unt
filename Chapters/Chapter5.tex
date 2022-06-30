@@ -1,0 +1,72 @@
+% Chapter Template
+
+\chapter{Conclusiones} % Main chapter title
+
+\label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+En este capítulo se detallan las conclusiones relacionadas al alcance de los objetivos que se plantearon al inicio del trabajo. Además, se analizan las características de \emph{software} y \emph{hardware} del prototipo desarrollado, el cumplimiento de la planificación y los próximos pasos a seguir para mejorarlo y convertirlo en un producto comercial.
+
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Conclusiones generales }
+
+Este trabajo logró desarrollar de forma exitosa un sistema IoT para monitoreo y control de viviendas y edificios. Particularmente se implementó el monitoreo, supervisión y control de temperatura, humedad y medición de características de la red eléctrica del edificio. Se verificó el cumplimiento de los requerimientos más importantes, quedando aún por validar algunos menos relevantes y que pueden ser implementados en trabajos futuros con un cronograma con mayor margen de tiempo.
+
+
+
+
+%Los módulos que requirieron de \emph{hardware} y \emph{firmware} para cumplir su función dentro del sistema IoT fueron desarrollados considerando los requerimientos funcionales y el tiempo marcado en el cronograma como principales objetivos a cumplir. 
+
+Se realizaron pruebas principales de usabilidad, funcionalidad, acceso de red y seguridad web mínimos y necesarios para poder comprobar su funcionamiento en un ambiente real. 
+
+%Todos los componentes de software desarrollados para el sistema IoT fueron creados y testeados dentro de un entorno operativo Windows 10, GNU/Linux Elementary OS y RasberryPi OS. 
+
+%Para mayor información y seguimiento de futuros desarrollos funcionales, se puede acceder a la web oficial: www.cenergy.icfnet.org
+
+Durante el desarrollo de este trabajo se aplicaron conocimientos adquiridos a lo largo de la especialización. A continuación, se detallan las que tuvieron mayor relevancia:
+
+
+\begin{itemize}
+\item Gestión de proyectos: se elaboró un plan de proyecto, pudiendo contar desde el comienzo con una planificación clara del trabajo a realizar.
+
+\item Protocolos de Internet: se aprendió sobre las capas de red, protocolos de red y configuración para redes LAN y WLAN. 
+
+\item Arquitectura de protocolos: se aplicaron los conocimientos sobre el protocolo MQTT para el esquema de comunicación de sistemas IoT.
+
+\item Desarrollo de aplicaciones web: se utilizaron buenas prácticas de programación y patrones de desarrollo, especialmente apropiadas para aplicaciones web. 
+
+\item Infraestructura para la implementación de sistemas: se usaron conceptos vistos sobre el diseño, gestión e interacción de una aplicación web con una base de datos.
+
+\item Ciberseguridad en IoT: permitió conocer los posibles escenarios críticos e identificar vulnerabilidades que deben ser tomadas en cuenta para el desarrollo de software seguro.
+
+\end{itemize}
+
+Por lo tanto, se concluye que los objetivos planteados al inicio del trabajo han sido alcanzados satisfactoriamente y se han obtenido y reforzado conocimientos valiosos para la formación profesional del autor.
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+\section{Próximos pasos}
+
+Para dar continuidad al esfuerzo realizado hasta el momento y poder obtener un producto comercialmente atractivo surgen los siguientes puntos: 
+
+\begin{itemize}
+
+\item Rediseñar cada módulo físico y unificar los componentes electrónicos internos en una placa de circuito impreso o PCB (por las siglas en ingles \emph{printed circuit board}) más pequeña, considerando estándares de fabricación de placas electrónicas para uso comercial.
+
+%Integrar una unidad de almacenamiento interno en el módulo actuador para guardar el ultimo estado valido antes de ser apagado y de esta manera acelerar la sincronización del modulo al ser encendido nuevamente.
+
+\item Implementar nuevas funciones de ciberseguridad web para el software de monitoreo local y remoto considerando los ataques cibernéticos más comunes en dicho entorno.
+
+\item Desarrollar la autenticación por token vía SMS para la validación de acceso al software principal de monitoreo y control, para garantizar una capa de seguridad web adicional al sistema actual.
+
+\item Desarrollar una aplicación móvil para entornos Android e IOS para facilitar el acceso y agregado de módulos al sistema IoT y garantizar un servicio más amigable al usuario.
+
+\item Implementar mecanismos de cifrado de unidades internas de la tarjeta microSD del módulo principal donde se almacena el software de monitoreo, los procesos internos de red y la base de datos local, para evitar la fácil manipulación de información confidencial del sistema.
+\end{itemize}

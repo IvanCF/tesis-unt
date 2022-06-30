@@ -1,0 +1,740 @@
+% Chapter Template
+
+\chapter{Ensayos y resultados} % Main chapter title
+
+\label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+En este capítulo se detallan los resultados esperados y obtenidos sobre cada una de las pruebas realizadas para validar la integración del sistema y poder comprobar que el alcance funcional logrado es acorde a lo esperado.
+
+%\citep{ARTICLE:1}, \citep{BOOK:1}, \citep{BOOK:2}, \citep{WEBSITE:1}.
+
+\section{Banco de pruebas}
+
+Todos los ensayos que se describen en este capítulo fueron efectuados utilizando el diseño físico de red que se muestra en la figura \ref{fig:banco}. Las pruebas funcionales desde dentro de la red local se realizaron con una laptop MacBook Pro y un equipo de escritorio con Windows 10. Las pruebas de funcionalidad remota se realizaron utilizando un dispositivo móvil Samsung A50 con acceso a la red celular mediante el uso de paquetes de datos a Internet.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.82\textwidth]{./Figures/banco2.png}
+	\caption{Esquema del banco de pruebas utilizado.}
+
+	\label{fig:banco}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Resultados de los módulos del sistema IoT}
+En esta sección se muestran las imágenes reales de los resultados obtenidos de la construcción de cada módulo físico. Estos dispositivos fueron utilizados para las pruebas de validación en un ambiente real IoT. Las figuras \ref{fig:modPrincipal}, \ref{fig:modTemp} y \ref{fig:modConsumo2} muestran los módulos.
+
+ 
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.9\textwidth]{./Figures/principal2.png}
+\caption{Vista superior y posterior del módulo principal.}
+\label{fig:modPrincipal}
+\end{figure}
+
+
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.85\textwidth]{./Figures/moduloTemp2.png}
+\caption{Vista lateral, frente y superior del módulo de temperatura.}
+\label{fig:modTemp}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.8\textwidth]{./Figures/consumo3.png}
+\caption{Vista frontal y lateral del módulo actuador y módulo de consumo.}
+\label{fig:modConsumo2}
+\end{figure}
+\end{landscape} %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resultados del software de monitoreo y control}
+
+Las figuras \ref{fig:software1} y \ref{fig:software2} muestran los resultados responsivos para cada tipo de dispositivo considerado en el desarrollo.
+
+\vspace{0.5cm}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.62 \textwidth]{./Figures/responsive1.png}
+\caption{Vista del software en equipos desktop y laptop.}
+\label{fig:software1}
+\end{figure}
+
+\vspace{1.0cm}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.65\textwidth]{./Figures/responsive2.png}
+\caption{Vista del software en tableta y celular.}
+\label{fig:software2}
+\end{figure}
+
+\vspace{1.5cm}
+
+El software de monitoreo y control fue diseñado y desarrollado a medida con el objetivo de poseer los derechos de \emph{Copyright}. Por ser de tipo web requiere solo un navegador web y conexión a la red local o a Internet para poder ser utilizado. 
+
+El software ha sido nombrado como Cenergy IoT System y hace referencia al control de energía eléctrica mediante un sistema IoT.  
+
+La interfaz de control de acceso al sistema se muestra en la figura \ref{fig:gui0}. Las credenciales utilizadas son el número de documento nacional de identidad (DNI) y una contraseña de longitud mínima de 8 caracteres.
+\vspace{0.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/gui/0.png}
+\caption{Interfaz gráfica de acceso al  \emph{software} de monitoreo y control.}
+\label{fig:gui0}
+\end{figure}
+%\end{landscape} %
+\vspace{0.5cm}
+
+La interfaz de monitoreo para sensores o actuadores permite mostrar en tiempo real el comportamiento que tienen en el sistema, así como su estado actual. Si un sensor o actuador posee el estado CONECTADO se podrán observar sus detalles desde la opción ``ver detalles''. Esta opción permite acceder a una vista gráfica más detallada del mismo. 
+
+El software actualmente presenta interfaces para cuatro tipos de consultas, lecturas de temperatura, historial de temperatura, consumo sin facturar y consumo facturado. Cada lectura que se registra como consumo en la base de datos se respalda en agrupaciones de intervalos de horas y los registros que aún no completan las horas, podrán ser consultados desde las opciones lectura de temperatura y consumos sin facturar. Los resultados de las consultas podrán ser exportados en formato excel o pdf o, si se desea, ser impresos directamente. %La figura \ref{fig:gui5} muestra la interfaz de consultas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=0.8\textwidth]{./Figures/gui/5.png}
+%\caption{Interfaz gráfica de consultas y reportes de la base de datos.}
+%\label{fig:gui5}
+%\end{figure}
+%\end{landscape} %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.55\textwidth]{./Figures/gui/1.png}
+%\caption{Dashboard inicial del  \emph{software} de monitoreo y control.}
+%\label{fig:gui1}
+%\end{figure}
+%\end{landscape} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.55\textwidth]{./Figures/gui/2.png}
+%\caption{Interfaz gráfica de lista de sensores del sistema.}
+%\label{fig:gui2}
+%\end{figure}
+%\end{landscape} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.5\textwidth]{./Figures/gui/2-1.png}
+%\caption{Interfaz gráfica donde se muestran todos los detalles de un sensor.}
+%\label{fig:gui2-1}
+%\end{figure}
+%\end{landscape} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.52\textwidth]{./Figures/gui/3.png}
+%\caption{Interfaz gráfica de la lista de sensores de consumo junto a su actuador.}
+%\label{fig:gui3}
+%\end{figure}
+%\end{landscape} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.52\textwidth]{./Figures/gui/3-1.png}
+%\caption{Interfaz gráfica de usuario donde se muestran todos los detalles de un sensor de consumo.}
+%\label{fig:gui3-1}
+%\end{figure}
+%\end{landscape} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.55\textwidth]{./Figures/gui/4.png}
+%\caption{Interfaz gráfica para agregar un nuevo dispositivo al sistema.}
+%\label{fig:gui4}
+%\end{figure}
+%\end{landscape} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.5\textwidth]{./Figures/gui/nucleo.png}
+%\caption{Grafo de comunicación y sincronización del núcleo del sistema IoT.}
+%\label{fig:grafo}
+%\end{figure}
+%\end{landscape} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1.0cm}
+\section{Pruebas de elección de canal y ancho de banda}
+Para las pruebas y análisis de las señales inalámbricas se utilizó el software WiFi Explorer Lite. Es una herramienta de descubrimiento de redes inalámbricas que ayuda a identificar conflictos de canales y problemas de configuración que puedan afectar la conectividad o el rendimiento de la red Wi-Fi de un hogar u oficina \citep{WEBSITE:24}. 
+
+%Los fundamentos y consideraciones para la elección del canal y ancho de banda de la señal Wi-Fi que se utilizó, se describieron en el capítulo 3. La elección dependió de las señales circundantes vecinas a la red doméstica donde se instaló el sistema prototipo IoT. 
+
+La figura \ref{fig:test04} muestra el resultado del primer escaneo de las señales y el uso de los canales respectivos así como el solapamiento existente entre ellos. Las señales importantes son:
+
+\keyword{Señal WLAN IoT} 
+\begin{itemize}
+\item SSID: MATRIX-ICF.
+\item Canal: 10 (configuración automática).
+\item Ancho de canal: 40 MHz (configuración automática).
+\item Potencia señal: 93\%.
+\item Seguridad:  WPA2 (PSK).
+\item Tasa máxima de transferencia: 300 Mbps.
+\end{itemize}
+
+
+\keyword{Señal WLAN doméstica}
+\begin{itemize} 
+\item SSID: CLARO-B612-D514.
+\item Canal: 11 (configuración automática).
+\item Ancho de canal: 20 MHz (configuración automática).
+\item Potencia señal: 64\%.
+\item Seguridad: WPA2 (PSK).
+\item Tasa Máxima de transferencia: 144,4 Mbps.
+\end{itemize}
+
+El procedimiento de mejora de la señal IoT consistió en modificar la configuración por defecto del router/AP al cambiar el canal y reducir el ancho de banda. En cada cambio se verificó el comportamiento de las señales en el ambiente y la reducción de solapamiento de los mismos.
+
+%La figura \ref{fig:test02} muestra el ancho de banda que ocupa el canal de comunicación de la señal del router sin configurar. Esta configuración por defecto demuestra no ser la más adecuada para el ambiente IoT debido a que produce interferencias a las señales circundantes.
+
+%La figura \ref{fig:test03} muestra las características de la señal inalámbrica doméstica del lugar donde se implementó el sistema IoT prototipo.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+El objetivo de usar un software de exploración Wi-Fi es detectar las zonas y canales con mayor interferencia y elegir un canal que tenga la mínima o ninguna intersección con la zona critica. El \emph{software} detectó la zona con mayor solapamiento y lo marcó en color rojo, como se muestra en la figura \ref{fig:test04}, asociado al SSID y al canal que lo causa.
+
+El análisis de las imágenes de señales que genera el \emph{software} de exploración permite conocer cuales podrían ser los canales ideales. El resultado del cambio de canal para la señal destinada a la comunicación IoT, se muestra en la figura \ref{fig:test05}. 
+
+%Si se compara la figura \ref{fig:test02} (antes) con la figura \ref{fig:test05} (después), se puede observar la diferencia del canal configurado al mostrar la reducción de interferencias con las señales circundantes.
+
+%Al cambiar el canal de la señal IoT, el \emph{software} cambia el color de la zona crítica (de rojo a naranja) en señal que el solapamiento se redujo, demostrando que existe una mejora en la señal de comunicación a utilizar. La figura \ref{fig:test06} muestra el resultado de mejora obtenido.
+
+%Las pruebas y cambios de canal para el router/AP se deben realizar durante la instalación y puesta en marcha del sistema IoT y podrán ser actualizados de acuerdo al cronograma establecido para su mantenimiento. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.5\textwidth]{./Figures/wifi/01.png}
+%\caption{Estado inicial de las señales Wi-Fi local y circundantes en el ambiente donde se implementó el sistema IoT.}
+%\label{fig:test01}
+%\end{figure}
+%\end{landscape} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.5\textwidth]{./Figures/wifi/02.png}
+%\caption{Ancho de banda de la señal del router para la red IoT con la configuración por defecto del dispositivo.}
+%\label{fig:test02}
+%\end{figure}
+%\end{landscape} %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.5\textwidth]{./Figures/wifi/03.png}
+%\caption{Ancho de banda  y canal de la señal Wi-Fi doméstica.}
+%\label{fig:test03}
+%\end{figure}
+%\end{landscape} %
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.5\textwidth]{./Figures/04.png}
+\caption{Zona crítica con mayor interferencia entre los canales de las redes inalámbricas.}
+\label{fig:test04}
+\end{figure}
+\end{landscape} %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.5\textwidth]{./Figures/wifi/05.png}
+\caption{Resultado final de ancho de banda y canal sin interferencias críticas.}
+\label{fig:test05}
+\end{figure}
+\end{landscape} %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.5\textwidth]{./Figures/wifi/06.png}
+%\caption{Zona con reducción de solapamiento después de la configuración manual del router.}
+%\label{fig:test06}
+%\end{figure}
+%\end{landscape} %
+
+
+\section{Pruebas del módulo de temperatura}
+
+El módulo permite leer las variables físicas de temperatura y humedad del ambiente donde se instaló. La temperatura se muestra en la pantalla OLED del módulo y con más detalle en el \emph{software} web de monitoreo y control.
+
+La figura \ref{fig:test-temp} muestra la instalación para las pruebas y el valor obtenido en la pantalla OLED. La figura \ref{fig:temp-lectura} muestra los valores obtenidos en el \emph{software} de monitoreo y sus detalles se muestran en la figura \ref{fig:temp-detalle}.
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.9\textwidth]{./Figures/test/temp/test-temp.png}
+\caption{Funcionamiento del módulo de temperatura.}
+\label{fig:test-temp}
+\end{figure}
+
+La figura \ref{fig:test-panel} muestra las características del panel de visualización del módulo en el software.
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.65\textwidth]{./Figures/test/temp/panel.png}
+\caption{Características del panel de visualización.}
+\label{fig:test-panel}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.7\textwidth]{./Figures/test/temp/lectura.png}
+\caption{Monitoreo de los módulos la temperatura en el software.}
+\label{fig:temp-lectura}
+\end{figure}
+\end{landscape} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.7\textwidth]{./Figures/test/temp/detalle.png}
+\caption{Detalle del módulo de temperatura conectado y activo.}
+\label{fig:temp-detalle}
+\end{figure}
+\end{landscape} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Pruebas del módulo actuador}
+Para las pruebas se usó un esquema de conexión como se muestra en la figura \ref{fig:test-esquema}, usando un ventilador como electrodoméstico de consumo. 
+\vspace{0.5cm}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.87\textwidth]{./Figures/test/consumo/esquema.png}
+\caption{Esquema de conexión para pruebas del módulo actuador.}
+\label{fig:test-esquema}
+\end{figure}
+
+Al implementar el módulo y realizar las pruebas respectivas se demostró que el sensor AC-ZMPT101B es muy sensible en la captura del valor de la tensión. El valor obtenido se contrastó con un multímetro digital dando una diferencia aproximada de +2 V / -2 V. La figura \ref{fig:test-tension} muestra la comprobación de la tensión.
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/consumo/tension2.png}
+\caption{Comparación de la medida de la tensión entre el módulo y el multímetro.}
+\label{fig:test-tension}
+\end{figure}
+
+El módulo permite leer las variables físicas de tensión e intensidad así como el estado del relé actuador. Las lecturas se muestran en su pantalla gráfica como se muestra en la figura \ref{fig:test-activa1} y en la figura \ref{fig:test-activa2}.
+\vspace{0.5cm}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/consumo/paso.png}
+\caption{Módulo con paso de la corriente eléctrica (led rojo indica riesgo eléctrico en la toma de corriente).}
+\label{fig:test-activa1}
+\end{figure}
+
+\vspace{0.5cm}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/consumo/bloqueo.png}
+\caption{Módulo con bloqueo de la corriente eléctrica (led azul indica sin riesgo eléctrico en la toma de corriente).}
+\label{fig:test-activa2}
+\end{figure}
+
+\vspace{0.5cm}
+\section{Pruebas de consumo de energía eléctrica}
+
+La prueba de consumo eléctrico se efectuó con la ayuda de un ventilador de hogar con las siguientes características:
+
+\begin{itemize}
+\item Marca: ELECTROLUX.
+\item Tipo:	circuladores de aire con temporizador.
+\item Modelo: BFV10.
+\item Número de velocidades: 3.
+\item Potencia: 30 W.
+\end{itemize}
+
+%La figura \ref{fig:ventilador}  muestra las especificaciones técnicas adheridas en su parte posterior del ventilador. En la actualidad este modelo aún se comercializa pero con un incremento en el número de velocidades y en la potencia de consumo. 
+
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=0.7\textwidth]{./Figures/test/consumo/ventilador.png}
+%\caption{Etiqueta con información técnica del ventilador.}
+%\label{fig:ventilador}
+%\end{figure}
+
+Según la guía del organismo supervisor de la inversión en energía (OSINERG - Perú) \citep{BOOK:3}, para calcular el consumo eléctrico el valor de la potencia debe ser convertida a Kilowatts (kW), debido a esto se divide la potencia entre 1000. Respecto al ventilador usado en la prueba el valor ideal sería la ecuación \ref{eq:potenciatest2}:
+
+\begin{equation}
+	\label{eq:potenciatest2}
+	PE = \left( 0.03 \right) kW
+\end{equation}
+
+Para comparar el valor obtenido en la ecuación \ref{eq:potenciatest2}, el módulo de consumo permite obtener un valor real de la potencia del ventilador mediante la fórmula \ref{eq:potenciaform}. Las variables de tensión e intensidad de corriente son multiplicadas para obtener el valor de potencia instantáneo. La figura \ref{fig:registroPotencia} muestra las lecturas almacenadas en la base de datos del sistema IoT. Si se toma como muestra esos valores, se obtiene un promedio de potencia igual a 31,41 W y una desviación estándar aproximada de 0,09444.
+%y en la tabla \ref{tab:tablapotencias} se muestra la comparación del valor ideal con el valor real obtenido desde el módulo de consumo.
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.95\textwidth]{./Figures/test/consumo/lecturas.png}
+\caption{Lecturas de potencia almacenadas en la base de datos del sistema IoT.}
+\label{fig:registroPotencia}
+\end{figure}
+
+%\vspace{1.0cm}
+
+%\begin{table}[h]
+%	\centering
+%	\caption[Comparativa de registros de potencias obtenidas]{Comparativa de registros de potencias obtenidas.}
+%	\begin{tabular}{l c c c}    
+%		\toprule
+%		\textbf{P. ideal (W)} 	 & \textbf{P. ideal (kW)}  & \textbf{P. real - módulo (W)} &\textbf{P. real módulo (kW)} \\
+%		\midrule
+%		30 & 0.03 & 31.35 & 0.03135\\		
+%		30& 0.03 & 31.55  &0.03155 \\
+%		30& 0.03 & 31.47 & 0.03147\\		
+%		30& 0.03 & 31.36 & 0.03136\\		
+%		30& 0.03 & 31.33 & 0.03133\\
+%		\bottomrule
+%		\hline
+%	\end{tabular}
+%	\label{tab:tablapotencias}
+%\end{table}
+
+Los valores de las variables físicas de tensión e intensidad,  que son necesarias para calcular la  potencia del ventilador, se muestran en el software de monitoreo y control dentro de un conjunto de paneles según la cantidad de módulos registrados en el sistema IoT.
+
+Para facilitar la comprensión de la interfaz gráfica del software, la figura \ref{fig:test-panel5} muestra las características del panel de visualización del módulo en el \emph{software} cuando el actuador permite el paso de la corriente eléctrica. La figura \ref{fig:test-panel4} muestra las características del panel de visualización del módulo en el \emph{software} cuando el actuador bloquea el paso de la corriente eléctrica .
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/consumo/panel5.png}
+\caption{Panel de visualización del módulo con paso de corriente eléctrica.}
+\label{fig:test-panel5}
+\end{figure}
+
+%\vspace{0.5cm}
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/consumo/panel4.png}
+\caption{Panel de visualización del módulo con bloqueo de la corriente eléctrica.}
+\label{fig:test-panel4}
+\end{figure}
+
+Las variables de tensión, intensidad y potencia eléctrica del electrodoméstico conectado, se pueden visualizar en el \emph{software} de monitoreo y control, al igual que los detalles de su funcionamiento en tiempo real. La figura \ref{fig:dashboard-v1} y \ref{fig:dashboard-v2} ilustran lo mencionado.
+
+Para calcular el monto a pagar por el usuario se consideran consumos facturados y consumos no facturados. Los consumos facturados son aquellos registros promedio de un conjunto de registros temporales que se dieron dentro de un intervalo de tiempo. Por ejemplo, dentro del intervalo ``28-03-2022 16:00:00'' y ``28-03-2022 17:00:00'' se capturan aproximadamente 1800 lecturas de potencia, para considerar la facturación se obtiene la media aritmética del valor de potencia del conjunto y se almacena como único registro en la tabla de facturación con fecha y hora '28-03-2022 17:00:00'. posteriormente se procede a eliminar los 1800 registros temporales utilizados. Los consumos no facturados son los registros temporales. 
+
+
+Se realizó un muestreo de 5 horas de funcionamiento continuo del ventilador y se obtuvieron los resultados que se muestran en la figura \ref{fig:dashboard-consumo}. El \emph{dashboard} del \emph{software} de monitoreo y control ofrece una vista resumida del subtotal y total a pagar así como un gráfico interactivo de potencia en función del costo de consumo por hora.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.7\textwidth]{./Figures/test/consumo/actuador1.png}
+\caption{Visualización del módulo con paso de corriente eléctrica.}
+\label{fig:dashboard-v1}
+\end{figure}
+\end{landscape} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.7\textwidth]{./Figures/test/consumo/actuador2.png}
+\caption{Visualización del módulo con bloqueo de la corriente eléctrica.}
+\label{fig:dashboard-v2}
+\end{figure}
+\end{landscape} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{landscape} % esto es para rotar la pagina e imagen
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.7\textwidth]{./Figures/test/consumo/consumo.png}
+\caption{Dashboard de facturación del software de monitoreo y control.}
+\label{fig:dashboard-consumo}
+\end{figure}
+\end{landscape} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Los valores obtenidos en la figura \ref{fig:dashboard-consumo} fueron contrastados con los valores ideales para el funcionamiento de 5 horas de uso. Usando la ecuación \ref{eq:consumoform} surge el resultado que se muestra en la ecuación \ref{eq:ec}:
+
+\begin{equation}
+	\label{eq:ec}
+	EC = \left( 0.15 \right) kW
+\end{equation}
+
+
+Para obtener el costo de consumo, se multiplica el costo de un kWh por el total de consumo. Se utilizó la última lectura de potencia entregada por el \emph{software} de monitoreo que es igual 32.55 W, tal como se muestra en la figura \ref{fig:dashboard-v1}. La tabla \ref{tab:tablacostos} muestra la comparación entre los valores obtenidos considerando el uso del ventilador de una hora al día, por 5 horas por día, por semana (25 h) y por mes (100 h). Se consideró el costo de S/0,5 nuevos soles (en moneda de Perú) por cada 1 kWh.
+
+\begin{table}[h]
+	\centering
+	\caption[Comparativa de consumos y costos]{Comparativa de consumos y costos.}
+	\begin{tabular}{c c c c c c c}    
+		\toprule
+		\textbf{Pi (kW)} 	 & \textbf{Ps (kW)}  & \textbf{T (h)} &\textbf{Ci (kW)} &\textbf{Cs (kW)} &\textbf{Coi (S/)} &\textbf{Cos (S/)}\\
+		\midrule
+		0,03 & 0,03255 & 1 & 0,03 & 0,03255 & 0,015 & 0,016275\\		
+		0,03 & 0,03255 & 5 & 0,15 & 0,16275 & 0,075 & 0,081375 \\
+		0,03 & 0,03255 & 25 & 0,75 & 0,81375 & 0,375 & 0,406875\\		
+		0,03 & 0,03255 & 100 & 3 & 3,255 & 1,5 & 1,6275\\		
+		
+		\bottomrule
+		\hline
+	\end{tabular}
+	\label{tab:tablacostos}
+\end{table}
+
+\vspace{0.1cm}
+El significado de las abreviaturas de las columnas son:
+\begin{itemize}
+\item Pi: potencia ideal (según descripción técnica del ventilador).
+\item Ps: potencia entregada por el \emph{software} de monitoreo y control.
+\item T: tiempo.
+\item Ci: consumo ideal o esperado.
+\item Cs: consumo entregado por el \emph{software} de monitoreo y control.
+\item Coi: costo ideal o esperado.
+\item Cos: costo calculado por el \emph{software} de monitoreo y control.
+\end{itemize}
+
+\vspace{0.1cm}
+De la columna Coi (valor esperado) y Cos (valor obtenido) es posible observar que los valores entregados por el \emph{software} son muy cercanos al esperado. Para obtener los errores relativos (Er) y errores absolutos (Ea) se utilizaron las ecuaciones  \ref{eq:ea} y \ref{eq:er} . La tabla \ref{tab:tablaerror} muestra los resultados de los errores obtenidos del muestreo.
+
+
+%\begin{equation}
+%	\label{eq:vp}
+%	\overline{X} = \frac1n \cdot \sum_{i=0}^n X_i  
+%\end{equation}
+
+\begin{equation}
+	\label{eq:ea}
+	E_a = \left| V_r - V_a \right|
+\end{equation}
+
+\begin{equation}
+	\label{eq:er}
+	E_r = \left( \frac{E_a}{V_r} \right)
+\end{equation}
+
+%\vspace{1.0cm}
+Siendo las variables:
+\begin{itemize}
+\item Ea: error absoluto. 
+\item Er: error relativo.
+\item Vr: valor real o esperado.
+\item Va: valor aproximado o medido.
+\end{itemize}
+
+\vspace{0.5cm}
+\begin{table}[h]
+	\centering
+	\caption[Error absoluto y relativo]{Error absoluto y relativo.}
+	\begin{tabular}{c c c c c}    
+		\toprule
+		\textbf{T (h)} & \textbf{Coi (Vr)} &\textbf{Cos (Va)} &\textbf{Ea} &\textbf{Er}\\
+		\midrule
+		1 & 0,015 & 0,016275 & 0,001275 & 0,085 \\		
+		5 & 0,075 & 0,081375 & 0,006375 & 0,085 \\
+		25 & 0,375 & 0,406875 & 0,031875 & 0,085\\		
+		100 & 1,5 & 1,6275 & 0,1 & 0,067\\		
+		
+		\bottomrule
+		\hline
+	\end{tabular}
+	\label{tab:tablaerror}
+\end{table}
+
+\section{Pruebas del funcionamiento del módulo replicador}
+
+Este módulo esta compuesto por un conjunto de subprocesos internos que se ejecutan de forma continua dentro del sistema operativo y cada subproceso muestra resultados de su salida por la terminal según su comportamiento. En consideración al fin comercial del prototipo, se ocultó la información sensible que usa el software para su funcionamiento.
+
+El proceso de envío de valores a la nube esta dividido en dos subprocesos. El primero es el envío de registros mediante la API remota para replicar los registros que se envían a la base de datos (P6), el segundo es el envío de valores al broker remoto (P1). La figura \ref{fig:envia1} muestra la salida del subproceso P6 durante el llamado a la API y la figura \ref{fig:envia2} muestra la salida del subproceso P1 durante el envío al broker remoto.
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=0.9\textwidth]{./Figures/test/replicador/enviaAPI.png}
+\caption{Salida del proceso de replicación a la nube utilizando la API.}
+\label{fig:envia1}
+\end{figure}
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/replicador/enviabroker.png}
+\caption{Salida del proceso de replicación al broker remoto.}
+\label{fig:envia2}
+\end{figure}
+
+Se mencionó en los capítulos anteriores que el replicador está constantemente verificando si existen registros que no han sido replicados a la nube, de ser así automáticamente llama a los subprocesos P5 y P8 para enviar los registros detectados mediante la API. La figura \ref{fig:r2} muestra la salida del subproceso P5 al replicar registros usando la API.
+
+%La figura \ref{fig:r1} muestra la salida del subproceso  P5 sin registros por enviar a la nube y l
+
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=0.8\textwidth]{./Figures/test/replicador/sinReplicar1.png}
+%\caption{Salida del proceso cuando no existen registros pendientes por replicar.}
+%\label{fig:r1}
+%\end{figure}
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/replicador/sinReplicar2.png}
+\caption{Salida del proceso de replicación a la nube de registros marcados como no replicado.}
+\label{fig:r2}
+\end{figure}
+
+%\section{Pruebas del sistema desde acceso remoto}
+
+%Para visualizar la comunicación entre el módulo replicador y el módulo principal local se muestra el grafo del funcionamiento del sistema de monitoreo y control. El software permite visualizar en tiempo real el comportamiento y el envío de mensajes entre canales como se muestra en la figura \ref{fig:graforemoto}. Los puntos de colores en la figura significan:
+
+%\begin{itemize}
+%\item Punto negro: mensaje enviado.
+%\item Punto rojo: cliente remoto conectado al sistema IoT.
+%\item Punto azul: cliente conectado al broker remoto en modo escucha.
+%\item Punto naranja: mensaje de un cliente remoto conectado temporalmente para enviar sincronización de estados desde el remoto al modulo principal local. 
+%\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape} % esto es para rotar la pagina e imagen
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=1.6\textwidth]{./Figures/test/replicador/remoto.png}
+%\caption{Grafo de comunicación MQTT funcionando desde el sistema réplica en la nube.}
+%\label{fig:graforemoto}
+%\end{figure}
+%\end{landscape} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Pruebas del funcionamiento del sistema sin Internet}
+
+El módulo replicador contiene un subproceso que se ejecuta de forma continua y verifica el estado del servicio de Internet. Al estar sin Internet en la red, el sistema detecta la falta de conectividad y muestra un mensaje en la parte superior del \emph{software} de monitoreo y control. La figura \ref{fig:inter1} muestra la salida por la terminal de los procesos del replicador al detectar la ausencia del servicio de Internet y la figura \ref{fig:inter3} muestran la alerta en el \emph{software}. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/replicador/desconexion3.png}
+\caption{Salida del proceso al detectar corte de Internet.}
+\label{fig:inter1}
+\end{figure}
+\vspace{0.25cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[width=0.65\textwidth]{./Figures/test/replicador/desconexion1.png}
+%\caption{Estado del software con Internet activo.}
+%\label{fig:inter2}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.0\textwidth]{./Figures/test/replicador/desconexion2.png}
+\caption{Estado del \emph{software} sin Internet.}
+\label{fig:inter3}
+\end{figure}
+
+
+\section{Comparativa del resultado con soluciones similares}
+
+Una vez expuestos los resultados obtenidos para cada módulo, se presenta a continuación el análisis de los resultados comparativos entre los tres tipos de soluciones descritas en el capítulo 1. La tabla \ref{tab:tabla-resultado} permite determinar las diferencias significativas con el uso y el tipo de servidor contra cada una de las diferentes soluciones.
+
+\begin{table}[h]
+	\centering
+	\caption[Comparativa de soluciones entre acceso y servidor]{Comparativa acceso y tipo de servidor.}
+	\begin{tabular}{p{4cm} c c c c }    
+		\toprule
+		\textbf{Producto} & \textbf{Acceso} & \textbf{Servidor local}   & \textbf{Servidor remoto} \\
+		\midrule
+		Energy Manager & Local y remoto  & no & sí  \\		
+		Iammeter	 & local y remoto & no & sí  \\
+		Bee2energy	 & local y remoto	& no & sí  \\
+		Cenergy IoT System (prototipo) & local y remoto & sí & sí \\
+		\bottomrule
+		\hline
+	\end{tabular}
+	\label{tab:tabla-resultado}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+La tabla \ref{tab:tabla-resultado2} permite determinar las diferencias respecto al uso de protocolos y el tipo de módulos que usa cada solución. 
+
+
+\begin{table}[h]
+	\centering
+	\caption[Comparativa de soluciones entre protocolo y hardware]{Comparativa protocolo y tipos de hardware.}
+	\begin{tabular}{p{4cm} p{3cm} p{2cm} p{2cm}}    
+		\toprule
+		\textbf{Producto} 	 & \textbf{Protocolos}  & \textbf{Sensores} & \textbf{Actuadores}  \\
+		\midrule
+		Energy Manager & Modbus, M-Bus y TCP/IP & propietario & propietario \\		
+		Iammeter	 & MQTT y TCP/IP	& propietario / comercial & propietario / comercial   \\
+		Bee2energy	 & múltiples protocolos IoT		& propietario / comercial & propietario / comercial \\
+		Cenergy IoT	System (prototipo) & MQTT y TCP/IP	& propietario & propietario  \\
+		\bottomrule
+		\hline
+	\end{tabular}
+	\label{tab:tabla-resultado2}
+\end{table}
