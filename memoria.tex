@@ -28,6 +28,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[utf8]{inputenc}
 \usepackage{pdflscape} % paquete para girar la hoja
 \usepackage{colortbl, xcolor}
+\usepackage{pdfpages}
 %----------------------------------------------------------------------------------------
 %	INFORMACIÓN DE LA MEMORIA
 %----------------------------------------------------------------------------------------
@@ -70,6 +71,54 @@ headsepline, % Uncomment to get a line under the header
 \pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
 
 
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	CONTENIDO DE LA MEMORIA  - DEDICATORIA
+%----------------------------------------------------------------------------------------
+
+\dedicatory{\textbf{Dedico esta tesis:\vspace{1.0cm}}
+
+A Dios por ser mi guía y acompañarme en el transcurso de mi vida, brindándome paciencia y sabiduría para culminar con éxito mis metas propuestas.
+
+A mis padres, a mi esposa Gabriela y a mi hijo Carlos Daniel por ser mis principales pilares de vida y por haberme apoyado incondicionalmente para no decaer cuando todo parecía complicado e imposible.
+
+A mis hermanos por estar siempre presentes, por el apoyo y el soporte moral.
+
+A mi tía Corina Cruz Perez por todo su apoyo incondicional para culminar con éxito esta meta.
+
+\vspace{1.0cm}
+\hspace{8cm} Daniel Iván Cruz Flores
+
+\vspace{1.2cm}
+
+dedicatoria moya ...
+
+\vspace{1.0cm}
+\hspace{8cm} Leoncio Moya Carranza
+}
+
+
+ % escribir acá si se desea una dedicatoria
+%----------------------------------------------------------------------------------------
+%	CONTENIDO DE LA MEMORIA  - AGRADECIMIENTOS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+%\addchaptertocentry{\acknowledgementname} % Descomentando esta línea se puede agregar los agradecimientos al índice
+\vspace{1.5cm}
+
+A todos los docentes que con su conocimiento motivaron a desarrollarme como persona y profesional.
+
+A mi asesor Mg. Ing. Edwin Mendoza Torres por su buena predisposición y orientación durante la realización del presente trabajo.
+
+
+\end{acknowledgements}
+
+% incluir documento del acta de sustentacion 
+\includepdf[pages=1]{ActaSustentacion.pdf}
 %----------------------------------------------------------------------------------------
 %	RESUMEN - ABSTRACT 
 %----------------------------------------------------------------------------------------
@@ -87,45 +136,16 @@ En este trabajo se aplicaron conocimientos de protocolos de Internet, redes inal
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
-%	CONTENIDO DE LA MEMORIA  - AGRADECIMIENTOS
-%----------------------------------------------------------------------------------------
-
-\begin{acknowledgements}
-%\addchaptertocentry{\acknowledgementname} % Descomentando esta línea se puede agregar los agradecimientos al índice
-\vspace{1.5cm}
-
-Quiero expresar mi gratitud a Dios por ser mi guía y acompañarme en el transcurso de mi vida, brindándome paciencia y sabiduría para culminar con éxito mis metas propuestas.
-
-A mis padres, a mi esposa Gabriela y a mi hijo Carlos Daniel por ser mis principales pilares de vida y por haberme apoyado incondicionalmente para no decaer cuando todo parecía complicado e imposible.
-
-A mis hermanos por estar siempre presentes, por el apoyo y el soporte moral.
-
-A todos los docentes que con su conocimiento motivaron a desarrollarme como persona y profesional.
-
-A mi asesor Mg. Ing. Edwin Mendoza Torres por su buena predisposición y orientación durante la realización del presente trabajo.
-
-A mi tía Corina Cruz Perez por todo su apoyo y a todas las personas que contribuyeron para culminar con éxito esta meta propuesta.
- 
- 
-
-\end{acknowledgements}
-
-%----------------------------------------------------------------------------------------
 %	LISTA DE CONTENIDOS/FIGURAS/TABLAS
 %----------------------------------------------------------------------------------------
-
-\tableofcontents % Prints the main table of contents
 
 \listoffigures % Prints the list of figures
 
 \listoftables % Prints the list of tables
 
+\tableofcontents % Prints the main table of contents
 
-%----------------------------------------------------------------------------------------
-%	CONTENIDO DE LA MEMORIA  - DEDICATORIA
-%----------------------------------------------------------------------------------------
 
-% \dedicatory{\textbf{Dedicado a... [OPCIONAL]}}  % escribir acá si se desea una dedicatoria
 
 %----------------------------------------------------------------------------------------
 %	CONTENIDO DE LA MEMORIA  - CAPÍTULOS
