@@ -353,7 +353,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 	\tttypeout{Dedicatory}
 	\null\vfil
 	\thispagestyle{plain}
-	\begin{justify}{\Large\slshape #1}\end{justify}
+	\begin{justify}{\normalsize\slshape #1}\end{justify}
 	\vfil\null
 }
 
