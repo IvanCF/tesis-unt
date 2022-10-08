@@ -387,7 +387,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 	
 	
 	\vspace{1.0cm}
-	\Large {Autor:\\
+	\Large {Autores:\\
 	\authorname\\ 
 	\authornamedos}\\ % Author name
 	
