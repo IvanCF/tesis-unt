@@ -4,7 +4,15 @@
 
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 \label{IntroGeneral}
-......
+La tecnología de automatización orientada a viviendas y lugares de trabajo está tomando cada vez mayor relevancia en nuestras vidas, aunque existe una gran variedad de soluciones que ofrecen dotar de tecnología a ciertos elementos en un ambiente doméstico, su principal desventaja es que casi siempre la recolección de datos se realiza con sensores que dependen de una conexión a Internet para enviar sus valores a un servidor central para su gestión. Esta forma de trabajo permite la facilidad de uso pero con la desventaja de que la gestión funciona solo si existe conexión a Internet, además los sensores más comerciales del mercado actual están destinados a un uso independiente con su propia aplicación móvil, complicando la necesidad de tener una única solución centralizada ante el uso de múltiples sensores.
+
+El presente proyecto se destaca especialmente por centralizar y unificar resultados de la red de sensores en un sistema web principal de monitoreo y control sin depender de la conexión a Internet para su funcionamiento. Para lograr esta tarea se trabajará con la recolección de datos de sensores ubicados en distintos puntos de estudio de una vivienda o ambiente conectados a una red local dedicada. Cada una de las lecturas de los sensores serán enviadas a una unidad central local mediante el protocolo MQTT por vía inalámbrica, dejando la dependencia del Internet solo para los accesos remotos.
+
+El módulo central local contará con la función para replicar los valores recolectados hacia un servicio en la nube, tarea que se realizará mientras tenga conexión a Internet.
+
+Las funciones principales a implementar están orientados a confort (control de ventiladores y luces) y consumo energético de electrodomésticos.  
+
+El sistema BMS a desarrollar contará de dos formas de acceso: la primera es vía red local y la segunda vía Internet desde cualquier dispositivo mediante un navegador.
 %----------------------------------------------------------------------------------------
 
 % Define some commands to keep the formatting separated from the content 
@@ -24,6 +32,7 @@
 %\section{Conceptos generales}
 
 %En esta sección se describen aspectos esenciales para poder conocer y entender las tecnologías %y servicios usados en el trabajo.
+\vspace{5.0cm}
 
 \section{Justificación de la investigación}
 

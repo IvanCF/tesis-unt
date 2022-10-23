@@ -26,19 +26,19 @@ Se realizaron pruebas principales de usabilidad, funcionalidad, acceso de red y 
 
 %Todos los componentes de software desarrollados para el sistema IoT fueron creados y testeados dentro de un entorno operativo Windows 10, GNU/Linux Elementary OS y RasberryPi OS. 
 
-%Para mayor información y seguimiento de futuros desarrollos funcionales, se puede acceder a la web oficial: www.cenergy.icfnet.org
 
-Durante el desarrollo de este trabajo se aplicaron conocimientos adquiridos a lo largo de la especialización. A continuación, se detallan las que tuvieron mayor relevancia:
+
+Durante el desarrollo de este trabajo se aplicaron conocimientos adquiridos a lo largo de la carrera de estudio. A continuación, se detallan las que tuvieron mayor relevancia:
 
 
 \begin{itemize}
-\item Gestión de proyectos: se elaboró un plan de proyecto, pudiendo contar desde el comienzo con una planificación clara del trabajo a realizar.
+%\item Gestión de proyectos: se elaboró un plan de proyecto, pudiendo contar desde el comienzo con una planificación clara del trabajo a realizar.
 
 \item Protocolos de Internet: se aprendió sobre las capas de red, protocolos de red y configuración para redes LAN y WLAN. 
 
 \item Arquitectura de protocolos: se aplicaron los conocimientos sobre el protocolo MQTT para el esquema de comunicación de sistemas IoT.
 
-\item Desarrollo de aplicaciones web: se utilizaron buenas prácticas de programación y patrones de desarrollo, especialmente apropiadas para aplicaciones web. 
+\item Desarrollo de aplicaciones web: se utilizaron buenas prácticas de programación y patrones de desarrollo MVC, especialmente apropiadas para aplicaciones web con lenguajes orientadas a objetos. 
 
 \item Infraestructura para la implementación de sistemas: se usaron conceptos vistos sobre el diseño, gestión e interacción de una aplicación web con una base de datos.
 
@@ -46,8 +46,9 @@ Durante el desarrollo de este trabajo se aplicaron conocimientos adquiridos a lo
 
 \end{itemize}
 
-Por lo tanto, se concluye que los objetivos planteados al inicio del trabajo han sido alcanzados satisfactoriamente y se han obtenido y reforzado conocimientos valiosos para la formación profesional del autor.
+Por lo tanto, se concluye que los objetivos planteados al inicio del trabajo han sido alcanzados satisfactoriamente y se han obtenido y reforzado conocimientos valiosos para la formación profesional de los autores.
 
+Para mayor información y seguimiento de actualizaciones del proyecto, se puede acceder a la web oficial: https://www.cenergy.icfnet.org
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -62,11 +63,19 @@ Para dar continuidad al esfuerzo realizado hasta el momento y poder obtener un p
 
 %Integrar una unidad de almacenamiento interno en el módulo actuador para guardar el ultimo estado valido antes de ser apagado y de esta manera acelerar la sincronización del modulo al ser encendido nuevamente.
 
+\item Integrar el software principal y procesos internos del broker MQTT en un contenedor Docker para facilitar la migración, actualización y mantenimiento de nuevas funcionalidades del sistema en los servidores local y remoto.
+
 \item Implementar nuevas funciones de ciberseguridad web para el software de monitoreo local y remoto considerando los ataques cibernéticos más comunes en dicho entorno.
 
 \item Desarrollar la autenticación por token vía SMS para la validación de acceso al software principal de monitoreo y control, para garantizar una capa de seguridad web adicional al sistema actual.
 
 \item Desarrollar una aplicación móvil para entornos Android e IOS para facilitar el acceso y agregado de módulos al sistema IoT y garantizar un servicio más amigable al usuario.
 
+
+
+
 \item Implementar mecanismos de cifrado de unidades internas de la tarjeta microSD del módulo principal donde se almacena el software de monitoreo, los procesos internos de red y la base de datos local, para evitar la fácil manipulación de información confidencial del sistema.
+
+
+
 \end{itemize}

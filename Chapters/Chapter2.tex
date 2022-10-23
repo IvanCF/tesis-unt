@@ -22,13 +22,14 @@ La combinación de las soluciones BMS con nuevas tecnologías como el Big Data, 
 \item La mejora de la gestión incrementa el confort y seguridad de los usuarios del edificio.
 \end{itemize} 
 
-\vspace{1cm}
+\vspace{2cm}
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.95\textwidth]{./Figures/bms4.jpg}
+\includegraphics[width=.85\textwidth]{./Figures/bms4.jpg}
 \caption{Componentes de un sistema de gestión de edificios \protect\footnotemark .}
 \label{fig:bms}
 \end{figure}
+
 
 %\footnotetext{Imagen tomada de \url{https://n9.cl/sistemas_bms}}
 \footnotetext{Imagen tomada de \url{https://fireflytechnologyltd.com/bms/}}
@@ -120,11 +121,13 @@ Como efecto de esta problemática en Perú, surge la necesidad de desarrollar un
 
 Este trabajo presenta una propuesta de solución a partir del desarrollo de un prototipo mínimo viable de un sistema IoT para integrar, centralizar y unificar resultados de una red de sensores y actuadores, mediante un sistema web de monitoreo y control, así como la construcción de módulos propios para dicha tarea, sin la necesidad de una conexión a Internet para su funcionamiento. 
 
-Todos estos componentes trabajan en conjunto para brindar al cliente una solución tecnológica que sirva como herramienta visualmente amigable y que pueda ser el soporte en las tareas de gestión de consumo eléctrico. Para lograrlo, se desarrollaron módulos que integran \emph{software} y \emph{hardware}, estos hacen posible la adquisición de datos de sensores y actuadores ubicados en distintos puntos de una vivienda, conectados a una red local vía Wi-Fi. Cada lectura de los sensores permite el envío de datos a un servidor central local mediante el protocolo MQTT por vía inalámbrica, siendo el módulo principal local el responsable de registrar los valores de los sensores ante cualquier corte de Internet. La figura \ref{fig:diagrama1} ilustra el diagrama de componentes del sistema y la lógica de conexión.
+Todos estos componentes trabajan en conjunto para brindar al cliente una solución tecnológica que sirva como herramienta visualmente amigable y que pueda ser el soporte en las tareas de gestión de consumo eléctrico. Para lograrlo, se desarrollaron módulos que integran \emph{software} y \emph{hardware}, estos hacen posible la adquisición de datos de sensores y actuadores ubicados en distintos puntos de una vivienda, conectados a una red local vía Wi-Fi. Cada lectura de los sensores permite el envío de datos a un servidor central local mediante el protocolo MQTT por vía inalámbrica, siendo el módulo principal local el responsable de registrar los valores de los sensores ante cualquier corte de Internet. 
+
+La figura \ref{fig:diagrama1} ilustra el diagrama de componentes del sistema y la lógica de conexión.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{./Figures/bloques.png}
+	\includegraphics[width=0.99\textwidth]{./Figures/bloques.png}
 	\caption{Diagrama de bloques del sistema.}
 
 	\label{fig:diagrama1}
@@ -134,6 +137,7 @@ El sistema tiene la capacidad de permitir el acceso por medio de cualquier dispo
 
 Los componentes claves dentro de la solución propuesta y que se integran en la arquitectura IoT usada en el proceso de desarrollo son: 
 
+\vspace{1.0cm}
 
 \begin{itemize}
 \item Dispositivos IoT: son los módulos diseñados a partir de la integración de \emph{software}, \emph{firmware} y \emph{hardware}; es posible conectarlos de forma inalámbrica a una red más amplia.
@@ -258,7 +262,7 @@ Los servicios en la nube se clasifican en:
 %\item Aplicaciones web de Google
 %\end{itemize}
 
-%\vspace{0.5cm}
+\vspace{0.5cm}
 
 \end{itemize}
 
@@ -270,18 +274,18 @@ En la figura \ref{fig:servicios} se muestra una representación gráfica para di
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{./Figures/servicios.png}
+	\includegraphics[width=0.95\textwidth]{./Figures/servicios.png}
 	\caption{Tipos de servicio y orientación por rol \protect\footnotemark.}
 
 	\label{fig:servicios}
 \end{figure}
 
+\vspace{2.5cm}
 \footnotetext{Imagen tomada de \url{https://openwebinars.net/blog/tipos-de-cloud-computing/}}
 
 %\vspace{1cm}
 
 Para el trabajo se usó el servicio tipo PaaS en la creación y configuración del broker remoto así como para el almacenamiento de la aplicación web y para la gestión de la base de datos.
-
 
 %Para el trabajo se consideró el servicio de \emph{cloud computing} tipo PaaS, porque permite la creación y configuración del broker remoto, el servidor Apache para la aplicación web y el gestor de base de datos MySQL.
 
@@ -301,9 +305,8 @@ Las principales características  del servicio contratado para la implementació
 		Espacio de almacenamiento & 1000 MB \\
 		Transferencia mensual  & 10 GB\\				
 		Cantidad base de datos 	  & ilimitados\\
-		Acceso FTP 	  & sí\\
-		Backup diario y semanal 	  & sí\\
-		Soporte 24/7 	  & sí\\
+		%Acceso FTP 	  & sí\\
+		Soporte 24/7 y backup diario y semanal	  & sí\\
 		Seguridad - Firewall	  & sí\\
 		Certificados SSL/TLS	  & sí\\
 		PHP	  & V7 y V8\\
@@ -365,12 +368,16 @@ Para construir una red usando MQTT es necesario entender los conceptos que se ut
 
 El broker MQTT usado en el trabajo es Eclipse Mosquitto, por ser de código abierto.
 
+\vspace{0.5cm}
+
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.75\textwidth]{./Figures/broker.jpg}
+	\includegraphics[width=.8\textwidth]{./Figures/broker.jpg}
 	\caption{Funcionamiento del broker MQTT \protect\footnotemark..}
 	\label{fig:broker}
 \end{figure}
+
+
 \footnotetext{Imagen tomada de \url{https://www.factor.mx/portal/base-de-conocimiento/mqtt/}}
 
 %\vspace{1cm}
@@ -381,6 +388,8 @@ El broker MQTT usado en el trabajo es Eclipse Mosquitto, por ser de código abie
 
 
 La comunicación MQTT puede estar cifrada mediante TLS (\emph{Transport Layer Security}) y contar con credenciales de acceso para el control de los canales de envío y recepción. Al broker se le puede conectar un sinfín de dispositivos como teléfonos móviles, computadoras, sensores, actuadores, lámparas, relojes, bombas de agua, refrigeradores, cocinas y mucho más. 
+
+\vspace{2.0cm}
 
 \begin{figure}[htbp]
 	\centering
@@ -410,6 +419,8 @@ Es un agente de mensajes de código abierto (con licencia EPL / EDL) cuya versi�
 %El protocolo MQTT proporciona un método ligero para realizar mensajes mediante un modelo de publicación / suscripción. Esto lo hace adecuado para la mensajería de Internet de las cosas, como con sensores de baja potencia o dispositivos móviles como teléfonos, computadoras integradas o microcontroladores \citep{WEBSITE:5}.
 
 Mosquitto es parte de la Fundación Eclipse \citep{WEBSITE:5}, es un proyecto de IoT \citep{WEBSITE:39} y está patrocinado por la compañía Cedalo \citep{WEBSITE:40}. 
+%\vspace{0.5cm}
+
 
 \section{Componentes del módulo principal} 
 
@@ -428,7 +439,8 @@ Las especificaciones técnicas de la computadora Raspberry Pi 4 son \citep{WEBSI
 \item Puertos micro-HDMI (hasta 4kp 60 compatible).
 \item Ranura para tarjeta microSD para cargar el sistema operativo y el almacenamiento de datos.
 \item 5 VCC a través del conector USB-C (mínimo 3 A).
-\item 5 VCC a través del encabezado GPIO (mínimo 3 A).
+%\item 5 VCC a través del encabezado GPIO (mínimo 3 A).
+\vspace{0.5cm}
 \item Power over Ethernet (PoE) habilitado (requiere PoE HAT separado).
 \item Temperatura de funcionamiento ambiente: 0 °C - 50 °C.
 \end{itemize}
@@ -465,7 +477,7 @@ La fuente de alimentación para la Raspberry Pi 4 es de 3 A como se aprecia en l
 %\label{fig:microsd}
 %\end{figure}
 El case Argon One Pi4 V2 es el gabinete usado para este trabajo como componente para la integración de elementos del módulo principal. La figura \ref{fig:armado} muestra las partes del gabinete.  
-\vspace{0.5cm}
+\vspace{0.2cm}
 
 %Características del gabinete \citep{WEBSITE:16}:
 
@@ -490,7 +502,7 @@ El case Argon One Pi4 V2 es el gabinete usado para este trabajo como componente 
 \subsection{Sistema operativo para el servidor local}
 
 En la actualidad existen mucha variedad de sistemas operativos para la placa Raspberry Pi, pero para este trabajo se usó el sistema operativo oficial y recomendado por la Raspberry Pi Foundation, llamado ``Raspberry Pi OS'' - version 11 basado en el kernel 5.15.
-
+%\vspace{1.5 cm}
 %La web oficial ofrece diversas versiones a las cuales se puede acceder con descarga directa como se ilustra con la figura \ref{fig:so}.
 
 %\begin{figure}[htbp]
@@ -521,7 +533,7 @@ Para el trabajo se usó la placa versión 3 del NodeMCU ESP8266 que contiene el 
 	\label{fig:nodemcu}
 \end{figure}
 
-\vspace{1.5 cm}
+%\vspace{1 cm}
 Las especificaciones técnicas del NodeMCU son:
 
 \begin{itemize}
@@ -580,6 +592,7 @@ La familia de sensores SCT-013 está compuesta por sensores de corriente no inva
 
 Los sensores SCT-013 disponen de un núcleo ferromagnético partido (como una pinza) que permite abrirlo para arrollar un conductor de una instalación eléctrica sin necesidad de cortarlo, como se ilustra con la figura \ref{fig:sensorCorriente}. Dentro de la familia SCT-013 existen modelos que proporcionan la medición como una salida de intensidad o de tensión. 
 
+\vspace{1.5cm}
 
 \begin{figure}[htbp]
 	\centering
@@ -602,6 +615,8 @@ Los sensores de la serie SCT-013 son sensores que trabajan como transformadores,
 \end{figure}
 
 Las especificaciones más importantes por las cuales se escogió este instrumento para el desarrollo del trabajo son:
+
+\vspace{1.0cm}
 
 \begin{itemize}
 \item Corriente de entrada (inducción): 0-30 A AC.
@@ -701,6 +716,9 @@ Para el trabajo se consideró el módulo relé de activación 5 V y con soporte 
 \subsection{Lenguajes de programación}
 
 La elaboración de este trabajo involucró el usó de distintos \emph{software}s como herramientas para facilitar el desarrollo, así como el uso de diversos lenguajes de programación que se describen a continuación:
+
+\vspace{0.5cm}
+
 \begin{itemize}
 \item Python: es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional.
 
